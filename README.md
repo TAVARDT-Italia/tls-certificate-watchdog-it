@@ -1,40 +1,47 @@
 # Monitor Certificati TLS/SSL | TAVARDT Italia
 
-[![TLS Watchdog](https://img.shields.io/badge/Security-TLS%20Watchdog-5b3cf5.svg)](https://tools.tavardt.com/it/)
-[![Regulatory Compliance](https://img.shields.io/badge/Region-EUR-00C853.svg)](https://ag.tavardt.com/it/)
+[![Monitor de Certificados](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/it/analisi-header-sicurezza/)
+[![Conformidade](https://img.shields.io/badge/Jurisdi%C3%A7%C3%A3o-Italia-00C853.svg)](https://ag.tavardt.com/it/sicurezza-informatica/)
 
-Monitoraggio automatizzato della scadenza dei certificati TLS/SSL e crittografia perimetrale in Italia.
+Monitoraggio automatizzato della scadenza dei certificati TLS/SSL, integrità crittografica e conformità al GDPR in Italia.
 
-Maintained by the infrastructure resilience and cybersecurity division at [TAVARDT Italia](https://ag.tavardt.com/it/).
-
----
-
-## 1. Capabilities
-
-* **Expiration Watchdog:** Computes real-time days until SSL/TLS certificate expiry with configurable warning thresholds.
-* **Cipher Suite Inspection:** Detects deprecated TLS versions (TLS 1.0/1.1) and verifies forward secrecy support.
-* **Certificate Authority Validation:** Audits issuing CA identity and chain validity.
-* **Zero External Dependencies:** Built with native Python `ssl` and `socket` modules for seamless integration into CI/CD pipelines, cron jobs, and server health checks.
+Desenvolvido e mantido pela divisão de proteção de infraestruturas da **[TAVARDT Italia](https://ag.tavardt.com/it/)**.
 
 ---
 
-## 2. Quick Start
+## 1. Funzionalità di Monitoraggio Continuo
 
-Execute directly via Python without installing third-party packages:
+Strumento da terminale per esaminare lo stato di validità e le cifre crittografiche delle connessioni web:
+
+* **Monitoraggio Preventivo della Scadenza:** Calcola in tempo reale i giorni residui di validità del certificato.
+* **Audit delle Suite di Cifratura:** Verifica l'adozione di TLS 1.3 e la disattivazione dei protocolli legacy.
+* **Analisi dell'Autorità di Certificazione:** Controlla l'integrità della catena fiduciaria e i Subject Alternative Names.
+* **Esecuzione Leggera in Python:** Senza dipendenze esterne per una perfetta integrazione in script di manutenzione.
+
+---
+
+## 2. Guida Rapida all'Esecuzione
+
+Execute a ferramenta diretamente via Python sem necessidade de instalar dependências externas:
 
 ```bash
-python watchdog.py example.com
+python watchdog.py exemplo.com
 ```
 
 ---
 
-## 3. Online Diagnostic Suite
+## 3. Strumenti Diagnostici Online (Italia)
 
-For comprehensive vulnerability scanning, DNS verification, and technical audits, visit our localized tools portal:
+Audite a infraestrutura pública das suas aplicações utilizando a suíte de diagnósticos da TAVARDT:
 
-* [Online HTTP Security Headers Checker](https://tools.tavardt.com/it/security-headers-check/)
-* [Exposed Secret & Credential Scanner](https://tools.tavardt.com/it/exposed-files-scanner/)
-* [DMARC & Anti-Spoofing Verifier](https://tools.tavardt.com/it/dmarc-checker/)
-* [Full Diagnostic Portal](https://tools.tavardt.com/it/)
+* [Analisi Header HTTP di Sicurezza](https://tools.tavardt.com/it/analisi-header-sicurezza/)
+* [Validatore Consent Mode v2 e GDPR](https://tools.tavardt.com/it/validatore-consent-mode-v2-gdpr/)
+* [Verifica Protocollo DMARC ed Email](https://tools.tavardt.com/it/verifica-dmarc-email/)
+* [Scansione File e Segreti Esposti](https://tools.tavardt.com/it/scansione-file-esposti/)
+* [Suite Diagnostica Completa Italia](https://tools.tavardt.com/it/)
 
-For professional remediation and cybersecurity advisory, contact [TAVARDT Italia](https://ag.tavardt.com/it/contact/).
+---
+
+## 4. Consulenza e Ciberdifesa Crittografica
+
+Per consulenza tecnica in hardening crittografico e conformità alle linee guida ACN in Italia, contatta **[TAVARDT Italia](https://ag.tavardt.com/it/contatti/)**.
