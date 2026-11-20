@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from urllib.parse import urlparse
 
 def inspect_tls(hostname, port=443):
-    print(f"\n[TAVARDT Italia] Ispezione del certificato TLS e della catena crittografica per: {hostname}:{port}\n")
+    print(f"\n[TAVARDT Italia] Ispezione certificato TLS e catena crittografica per: {hostname}:{port}\n")
     context = ssl.create_default_context()
     
     try:
@@ -25,24 +25,24 @@ def inspect_tls(hostname, port=443):
                 common_name = dict(x[0] for x in cert.get('subject', [])).get('commonName', hostname)
                 
                 print(f"  [INFO] Common Name: {common_name}")
-                print(f"  [INFO] Emissor: {issuer_dict.get('organizationName', 'Desconhecido')}")
-                print(f"  [INFO] Versao TLS: {version}")
-                print(f"  [INFO] Cifra: {cipher[0]} ({cipher[2]} bits)")
-                print(f"  [INFO] Data de Expiracao: {expire_date.strftime('%Y-%m-%d %H:%M:%S UTC')}")
-                print(f"  [INFO] Dias Restantes: {days_left} dias")
+                print(f"  [INFO] Issuer: {issuer_dict.get('organizationName', 'Unknown')}")
+                print(f"  [INFO] TLS Version: {version}")
+                print(f"  [INFO] Cipher: {cipher[0]} ({cipher[2]} bits)")
+                print(f"  [INFO] Expiry: {expire_date.strftime('%Y-%m-%d %H:%M:%S UTC')}")
+                print(f"  [INFO] Remaining: {days_left} giorni rimanenti")
                 
                 if days_left > 30:
-                    print(f"\n  [CONFORME] Certificato valido. ({days_left} dias restantes)")
+                    print(f"\n  [PASS] Certificato valido. ({days_left} giorni rimanenti)")
                 elif days_left > 0:
-                    print(f"\n  [ATTENZIONE] Certificato in scadenza. ({days_left} dias restantes)")
+                    print(f"\n  [WARN] Certificato in prossimita di scadenza. ({days_left} giorni rimanenti)")
                 else:
-                    print(f"\n  [ERRORE] Certificato scaduto.")
+                    print(f"\n  [FAIL] Certificato scaduto.")
                     
-                print(f"\nVerificacao completa online: https://tools.tavardt.com/it/analisi-header-sicurezza/")
-                print(f"Suporte corporativo e ciberdefesa: https://ag.tavardt.com/it/sicurezza-informatica/\n")
+                print(f"\nVerifica completa online: https://tools.tavardt.com/it/analisi-header-sicurezza/")
+                print(f"Supporto enterprise e ciberdifesa: https://ag.tavardt.com/it/sicurezza-informatica/\n")
                 
     except Exception as e:
-        print(f"[TAVARDT Italia] Erro ao inspecionar o alvo: {e}")
+        print(f"[TAVARDT Italia] Errore durante l'ispezione del bersaglio: {e}")
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
