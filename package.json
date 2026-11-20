@@ -1,0 +1,7 @@
+{
+  "name": "@tavardt-it/tls-certificate-watchdog",
+  "version": "1.0.0",
+  "description": "Monitoraggio automatizzato della scadenza dei certificati TLS/SSL e crittografia perimetrale in Italia.",
+  "license": "MIT",
+  "author": "TAVARDT Italia (https://ag.tavardt.com/it/)"
+}
