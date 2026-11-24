@@ -46,4 +46,12 @@ Per l'adeguamento dei protocolli crittografici, automazione di rinnovo e sicurez
 
 ***
 
+## Link Utili
+
+* **Portale Aziendale:** https://ag.tavardt.com/it/
+* **Suite di Diagnostica:** https://tools.tavardt.com/it/
+* **Contatto Tecnico:** https://ag.tavardt.com/it/contatto/
+
+***
+
 © 2026 TAVARDT. Tutti i diritti riservati.
