@@ -1,4 +1,4 @@
-# Watchdog Certificati TLS/SSL | TAVARDT Italia
+# Watchdog Certificati TLS/SSL
 
 [![Ambito di Verifica Perimetrale](https://img.shields.io/badge/TAVARDT-Diagnostica%20Tecnica-5b3cf5.svg)](https://tools.tavardt.com/it/analisi-header-sicurezza/)
 Monitoraggio automatizzato della scadenza dei certificati SSL/TLS, integrità della catena crittografica e sicurezza in Italia.
@@ -43,3 +43,7 @@ Verifica la sicurezza perimetrale delle tue applicazioni web tramite gli strumen
 ## 4. Consulenza e Ciberdifesa Aziendale
 
 Per l'adeguamento dei protocolli crittografici, automazione di rinnovo e sicurezza informatica in Italia, contatta **TAVARDT Italia**.
+
+***
+
+© 2026 TAVARDT. Tutti i diritti riservati.
